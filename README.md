@@ -23,7 +23,7 @@ At a high level all this script is doing is using ```ssh``` to connect to pre-ex
 ## How to Use
 1. Download the script. <br/>
 ```
-wget https://github.com/dustin-groh-dev/kubernetes/blob/main/rke2-bootstrap/rke2-bootstrap.sh
+wget https://github.com/dustin-groh-dev/rke2-bootstrap/blob/main/rke2-boostrap/rke2-boostrap.sh
 ```
 2. Set your desired RKE2 version in the script variable `RKE2_VERSION` <br>
 3. Make it executable
