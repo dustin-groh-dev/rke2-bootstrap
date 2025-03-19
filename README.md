@@ -41,9 +41,7 @@ chmod +x rke2-bootstrap.sh
 
 
 ## Known Issues/Missing features
-- There is no way to specify a node to be an agent. Currently all nodes get joined as "all" roles. <br>
-- There's basically no error handling
-- Adding directory validation for node token
+- There's little error handling  <br>
 
 Server node docs: <br>
 https://docs.rke2.io/install/quickstart#server-node-installation <br>
