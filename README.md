@@ -33,7 +33,7 @@ chmod +x rke2-bootstrap.sh
 ```
 . rke2-bootstrap.sh
 ```
-5. Follow the script prompts to input node IPs and ssh key paths, then let the script run. When complete it should look like the below screenshot.
+5. Follow the script prompts to input node IPs and ssh key paths, then let the script run. The gif below shows the end of the process as the script waits for all nodes to be ready before continuing. 
 
 
 ![Screenshot of completed script](https://i.imgur.com/tQybaIQ.gif))
