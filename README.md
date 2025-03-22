@@ -1,14 +1,14 @@
 # RKE2-Boostrap Script
 
-## What is it?
 A simple script to bootstrap an RKE2 cluster using existing nodes and `ssh`. <br>
 
 ## Prerequisites
 The assumption of this script is that wherever you're running it from (a local machine, utility host, etc) has: 
 1. `ssh` keys set up for all the nodes you want to bootstrap
-2. kubectl set up in your path, ready to use. <br>
+2. kubectl set up in your path, ready to use.
+3. An environment that meets the [RKE2 requirements](https://docs.rke2.io/install/requirements). <br>
 
-Because of the nature of RKE2, you'll need to make sure the user you plan to use to ssh to the existing nodes has root access to download and run the RKE2 installation script.
+[Because of the nature of RKE2](https://docs.rke2.io/install/quickstart#1-run-the-installer), you'll need to make sure the user you plan to use to ssh to the existing nodes has root access to download and run the RKE2 installation script.
 
 ## How it works
 At a high level all this script is doing is using ```ssh``` to connect to pre-existing linux nodes, download the RKE2 install script, and join nodes using the generated token to set up an RKE2 cluster. More specifically it'll connect to your specified hosts and run a do a few things: <br>
@@ -25,6 +25,7 @@ At a high level all this script is doing is using ```ssh``` to connect to pre-ex
 wget https://raw.githubusercontent.com/dustin-groh-dev/rke2-bootstrap/refs/heads/main/rke2-boostrap/rke2-bootstrap.sh
 ```
 2. Set your desired RKE2 version in the script variable `RKE2_VERSION` <br>
+  - The default is v1.30.8.
 3. Make it executable
 ```
 chmod +x rke2-bootstrap.sh
